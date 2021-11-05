@@ -136,3 +136,16 @@ if( nameFinder.includes("Peggy")){
 
 //----------------------------------------------------------------------------
 
+const counterWords = ['code','repeat','eat','sleep','code','enjoy','sleep','code','enjoy','upgrade','code'];
+  
+function repeatCounter(counterWords) {
+   let repetidos= {};
+ 
+   counterWords.forEach(function(numero){
+    repetidos[numero] = (repetidos[numero] || 0) + 1;
+  });
+  
+ return repetidos
+
+}
+console.log(repeatCounter(counterWords));
