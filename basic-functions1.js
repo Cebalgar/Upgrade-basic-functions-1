@@ -44,3 +44,18 @@ let result= sumNumbers(numbers);
 console.log(result);
 
 //--------------------------------------------------------------
+const numbers = [12, 21, 38, 5, 45, 37, 6];
+function average(numbers) {
+    let sum = 0;
+    let count = numbers.length; 
+    
+    for (let i= 0; i<numbers.length; i++){
+        sum += numbers[i];
+    }
+    let avg = sum/count;
+    return avg
+  }
+
+  let result = average(numbers);
+  console.log(result);
+  //---------------------------------------------------------------
