@@ -114,3 +114,25 @@ let sinDuplicados= duplicates.filter((item,index)=>{
 console.log(sinDuplicados);
 
 //------------------------------------------------------------------------
+
+
+const nameFinder = ['Peter','Steve','Tony','Natasha','Clint','Logan','Xabier','Bruce','Peggy','Jessica','Marc'];     
+
+function finderName(array,valor) {
+
+    return array.some(function(arrayValor){
+        return valor === arrayValor;
+    });
+}
+finderName(nameFinder, "Peggy");
+console.log(true)
+
+    
+if( nameFinder.includes("Peggy")){
+  nameFinder.indexOf("Peggy");
+    
+}
+
+
+//----------------------------------------------------------------------------
+
