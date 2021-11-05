@@ -59,7 +59,7 @@ function average(numbers) {
   let result = average(numbers);
   console.log(result);
   //---------------------------------------------------------------
-  
+
   const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
     
   function averageWord(mixedElements) {
@@ -85,3 +85,32 @@ console.log(averageWord(mixedElements));
 
 
 //--------------------------------------------------------------
+
+const duplicates = ['sushi','pizza','burger','potatoe','pasta','ice-cream','pizza', 'chicken','onion rings','pasta','soda'];
+  
+function removeDuplicates(duplicates) {
+
+    for (let i = 0; i< duplicates.length; i++){
+        let string = duplicates[i]
+
+        if (duplicates.indexOf(string)!==-1){
+
+            return true
+        }
+        else{
+
+            return false
+        }
+    }
+}
+let result = removeDuplicates(duplicates)
+
+console.log(result);
+
+let sinDuplicados= duplicates.filter((item,index)=>{
+    return duplicates.indexOf(item)===index;
+})
+
+console.log(sinDuplicados);
+
+//------------------------------------------------------------------------
