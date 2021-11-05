@@ -59,3 +59,29 @@ function average(numbers) {
   let result = average(numbers);
   console.log(result);
   //---------------------------------------------------------------
+  
+  const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
+    
+  function averageWord(mixedElements) {
+
+    let numeros= 0;
+    let strings= 0;
+   
+    for (let i = 0; i < mixedElements.length; i++){
+
+        if(typeof(mixedElements[i])=="number"){
+
+            numeros += mixedElements[i];
+
+        }else if (typeof(mixedElements[i])!=="number"){
+
+            strings +=mixedElements[i].length;
+        }
+    }
+    return numeros+strings
+}
+console.log(averageWord(mixedElements));
+
+
+
+//--------------------------------------------------------------
