@@ -31,3 +31,16 @@ let result = findLongestWord(avengers);
 console.log(result);
 
 //---------------------------------------------------------
+const numbers = [1, 2, 3, 5, 45, 37, 58];
+
+function sumNumbers(numbers) {
+   let sum = 0;
+    for (let i= 0; i<numbers.length; i++){
+        sum += numbers[i];
+    }
+return sum
+}
+let result= sumNumbers(numbers);
+console.log(result);
+
+//--------------------------------------------------------------
